@@ -1,7 +1,7 @@
-import { CartItemType } from "@/types/cart.type";
-import { ENDPOINT } from "@/api/config";
-import { ERROR_MESSAGE } from "@/constants/error";
-import fetchWithBasicToken from "./fetchWithBasicToken";
+import { CartItemType } from "@/types/cart.type.ts";
+import { ENDPOINT } from "@/api/config.ts";
+import { ERROR_MESSAGE } from "@/constants/error.ts";
+import fetchWithBasicToken from "./fetchWithBasicToken.ts";
 
 export async function getCartList(): Promise<CartItemType[]> {
   const response = await fetchWithBasicToken({
